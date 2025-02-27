@@ -12,3 +12,8 @@ add_executable(
     contract_violation_handler.cpp
 )
 
+add_executable(
+    ex_general
+    general.cpp
+    contract_violation_handler.cpp
+)
