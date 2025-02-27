@@ -1,16 +1,14 @@
 
 
-set(
-    EXAMPLE
-    ex_constification
+add_executable(
+    ex_deep_const
+    deep_const.cpp
+    contract_violation_handler.cpp
 )
 
-
 add_executable(
-    ${EXAMPLE}
-    main.cpp
-    non_const_iteration.cpp
-    deep_const.cpp
+    ex_draw
+    draw.cpp
     contract_violation_handler.cpp
 )
 

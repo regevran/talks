@@ -13,4 +13,7 @@ void goo() {
    contract_assert(i==41); // violation
 }
 
-
+int main() {
+    goo();
+    return 0;
+}

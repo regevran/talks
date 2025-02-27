@@ -16,8 +16,7 @@ class shape {
         virtual bool ok_to_be_drawn() const = 0;
 };
 
-class me : public shape
-{
+class me : public shape {
     private:
         bool ok_to_be_drawn() const override 
         {            
@@ -29,3 +28,15 @@ class me : public shape
         bool haircut = true;
 };
 
+
+void draw(shape& s)
+    // always false, even if I did my hair!
+    pre(s.drawable())
+{    
+}
+
+int main()
+{
+    me m;
+    draw(m);  
+}
