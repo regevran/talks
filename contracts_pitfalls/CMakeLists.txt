@@ -29,5 +29,6 @@ set (
 project(${PROJ_NAME})
 
 subdirs(constification)
+subdirs(throwing_handler)
 
 
