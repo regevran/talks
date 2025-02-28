@@ -4,7 +4,6 @@ struct resource {
     bool is_valid() const {
         return false;
     }
-
     unsigned char memory[1'234'567];
 };
 
@@ -29,7 +28,7 @@ void release_resource(resource* r) {
 
 
 // to see the leak, run with leaks detector:
-// valgrind ex_leak
+// e.g: valgrind ex_leak
 int main()
 {
     try {
