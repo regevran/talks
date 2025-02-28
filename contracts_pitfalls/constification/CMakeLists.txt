@@ -17,3 +17,9 @@ add_executable(
     general.cpp
     contract_violation_handler.cpp
 )
+
+add_executable(
+    ex_slow_down
+    slow_down.cpp
+    contract_violation_handler.cpp
+)
